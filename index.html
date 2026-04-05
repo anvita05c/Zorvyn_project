@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYPTOHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&f[]=inter@400,500,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <div class="glass-shell">
+        <nav class="sidebar">
+            <div class="logo">KH</div>
+            <div class="nav-icons">
+                <div class="nav-item active" id="nav-dashboard"><i class='bx bxs-grid-alt'></i></div>
+                <div class="nav-item" id="nav-settings"><i class='bx bx-cog'></i></div>
+            </div>
+        </nav>
+
+        <main class="content">
+            <header>
+                <div class="header-text">
+                    
+                    <h1>KRYPTO <span class="thin">Hub</span></h1>
+                    <span class="badge">CAPITAL OVERVIEW</span>
+                    <p class="tagline" id="main-tagline">//Here's what's happening with your finances today.</p>
+
+                </div>
+                <div class="header-right">
+                    <div class="theme-toggle" id="theme-toggle">
+                        <i class='bx bx-moon'></i>
+                    </div>
+                    <div class="user-pill">
+                        <div class="avatar">JD</div>
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </header>
+
+            <div id="dashboard-view">
+            <section class="allocation-section">
+                <div class="ux-card central-allocation">
+                    
+                    <div class="hollow-chart-wrapper">
+                        <svg viewBox="0 0 50 50" class="hollow-donut">
+                            <circle class="ring-bg" cx="25" cy="25" r="15.9"></circle>
+                            <circle class="segment seg-1" cx="25" cy="25" r="15.9" stroke-dasharray="40 60" stroke-dashoffset="0"></circle>
+                            <circle class="segment seg-2" cx="25" cy="25" r="15.9" stroke-dasharray="25 75" stroke-dashoffset="-40"></circle>
+                            <circle class="segment seg-3" cx="25" cy="25" r="15.9" stroke-dasharray="20 80" stroke-dashoffset="-65"></circle>
+                            <circle class="segment seg-4" cx="25" cy="25" r="15.9" stroke-dasharray="15 85" stroke-dashoffset="-85"></circle>
+                        </svg>
+                    </div>
+
+                    <div class="chart-inner-text">
+                        <label>Total Value</label>
+                        <span class="total-val">$142k</span>
+                    </div>
+
+                    <div class="legend-grid">
+                        <div class="leg-item"><span class="dot cyan"></span> Housing </div>
+                        <div class="leg-item"><span class="dot purple"></span> Food</div>
+                        <div class="leg-item"><span class="dot gold"></span> Transport</div>
+                        <div class="leg-item"><span class="dot white"></span> Others</div>
+                    </div>
+                </div>
+            </section>
+
+            <p class="tagline section-tagline">// Quick Stats</p>
+
+            <section class="metrics-grid">
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-wallet'></i></div>
+                    <label>Total Balance</label>
+                    <h3>$8,350.00</h3>
+                    <span class="trend pos">+12%</span>
+                </div>
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-trending-up'></i></div>
+                    <label>Income</label>
+                    <h3>$24,563.00</h3>
+                    <span class="trend pos">+2.5%</span>
+                </div>
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-heart'></i></div>
+                    <label>Total Savings</label>
+                    <h3>$5,070.00</h3>
+                    <span class="trend pos">+8%</span>
+                </div>
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-trending-down'></i></div>
+                    <label>Monthly Expenses</label>
+                    <h3>$3,280.00</h3>
+                    <span class="trend neg">-4.2%</span>
+                </div>
+            </section>
+
+            <p class="tagline section-tagline">// Activity</p>
+
+            <section class="transactions-container">
+                <div class="ux-card list-card">
+                    <div class="list-header">
+                        <h4>Recent Activity</h4>
+                        <select id="activity-filter" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="income">Income</option>
+                            <option value="expense">Expenses</option>
+                        </select>
+                    </div>
+                    <div class="activity-row" data-type="income">
+                        <div class="act-main">
+                            <div class="act-icon"><i class='bx bx-briefcase-alt'></i></div>
+                            <div><p>Salary Deposit</p><small>Income • Dec 1</small></div>
+                        </div>
+                        <div class="act-val pos">+$5,350</div>
+                    </div>
+                    <div class="activity-row" data-type="expense">
+                        <div class="act-main">
+                            <div class="act-icon"><i class='bx bx-home-heart'></i></div>
+                            <div><p>Rent Payment</p><small>Housing • Dec 2</small></div>
+                        </div>
+                        <div class="act-val">-$1,200</div>
+                    </div>
+                    <div class="activity-row" data-type="expense">
+                        <div class="act-main">
+                            <div class="act-icon"><i class='bx bx-bulb'></i></div>
+                            <div><p>Electric Bill</p><small>Utilities • Dec 3</small></div>
+                        </div>
+                        <div class="act-val">-$145</div>
+                    </div>
+                    <div class="activity-row" data-type="expense">
+                        <div class="act-main">
+                            <div class="act-icon"><i class='bx bx-cart'></i></div>
+                            <div><p>Grocery Store</p><small>Food • Dec 4</small></div>
+                        </div>
+                        <div class="act-val">-$234</div>
+                    </div>
+                    <div class="activity-row" data-type="expense">
+                        <div class="act-main">
+                            <div class="act-icon"><i class='bx bx-coffee'></i></div>
+                            <div><p>Coffee Shop</p><small>Food • Dec 5</small></div>
+                        </div>
+                        <div class="act-val">-$12</div>
+                    </div>
+                </div>
+            </section>
+
+            <p class="tagline section-tagline">// Insights</p>
+
+            <section class="insights-grid">
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-chevrons-up'></i></div>
+                    <label>Highest Spending Category</label>
+                    <h3>Housing</h3>
+                    <span class="trend neg">-$1,200 this month</span>
+                </div>
+                <div class="ux-card stat-pill">
+                    <div class="doodle"><i class='bx bx-chevrons-down'></i></div>
+                    <label>Lowest Spending Category</label>
+                    <h3>Utilities</h3>
+                    <span class="trend pos">-$145 this month</span>
+                </div>
+            </section>
+            </div>
+
+            <div id="settings-view" style="display: none;">
+                <section class="settings-grid">
+                    <div class="ux-card">
+                        <div class="doodle"><i class='bx bx-user'></i></div>
+                        <h3>Profile Information</h3>
+                        <div class="input-group">
+                            <label>Full Name</label>
+                            <input type="text" class="setting-input" value="John Doe">
+                        </div>
+                        <div class="input-group">
+                            <label>Email Address</label>
+                            <input type="email" class="setting-input" value="john.doe@example.com">
+                        </div>
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" class="setting-input" value="28">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" class="setting-input" value="+1 (555) 123-4567">
+                    </div>
+                        <button class="setting-btn">Save Changes</button>
+                    </div>
+                    <div class="ux-card">
+                        <div class="doodle"><i class='bx bx-slider-alt'></i></div>
+                        <h3>Preferences</h3>
+                        <div class="setting-row">
+                            <span>Push Notifications</span>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="setting-row">
+                            <span>Two-Factor Auth (2FA)</span>
+                            <input type="checkbox">
+                        </div>
+                        <div class="setting-row">
+                            <span>Monthly Reports</span>
+                            <input type="checkbox" checked>
+                        </div>
+                    </div>
+                    <div class="ux-card">
+                        <div class="doodle"><i class='bx bx-lock-alt'></i></div>
+                        <h3>Security</h3>
+                        <div class="setting-row">
+                            <span>Biometric Login</span>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="setting-row">
+                            <span>Login Alerts</span>
+                            <input type="checkbox" checked>
+                        </div>
+                        <div class="setting-row">
+                            <span>App Lock (PIN)</span>
+                            <input type="checkbox">
+                        </div>
+                    </div>
+                    <div class="ux-card">
+                        <div class="doodle"><i class='bx bx-credit-card'></i></div>
+                        <h3>Payment Methods</h3>
+                        <div class="setting-row">
+                            <span>Bank Account (**** 1234)</span>
+                            <span class="trend pos">Connected</span>
+                        </div>
+                        <div class="setting-row">
+                            <span>Main Crypto Wallet</span>
+                            <span class="trend pos">Connected</span>
+                        </div>
+                        <button class="setting-btn-secondary">+ Add Payment Method</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                themeToggle.innerHTML = "<i class='bx bx-sun'></i>";
+            } else {
+                themeToggle.innerHTML = "<i class='bx bx-moon'></i>";
+            }
+        });
+
+        const navDashboard = document.getElementById('nav-dashboard');
+        const navSettings = document.getElementById('nav-settings');
+        const dashboardView = document.getElementById('dashboard-view');
+        const settingsView = document.getElementById('settings-view');
+        const navItems = document.querySelectorAll('.nav-item');
+        const mainTagline = document.getElementById('main-tagline');
+
+        navDashboard.addEventListener('click', () => {
+            navItems.forEach(item => item.classList.remove('active'));
+            navDashboard.classList.add('active');
+            dashboardView.style.display = 'block';
+            settingsView.style.display = 'none';
+            mainTagline.innerText = "//Here's what's happening with your finances today.";
+        });
+
+        navSettings.addEventListener('click', () => {
+            navItems.forEach(item => item.classList.remove('active'));
+            navSettings.classList.add('active');
+            dashboardView.style.display = 'none';
+            settingsView.style.display = 'block';
+            mainTagline.innerText = "// Profile & Settings";
+        });
+
+        const filterSelect = document.getElementById('activity-filter');
+        const activityRows = document.querySelectorAll('.activity-row');
+        
+        filterSelect.addEventListener('change', (e) => {
+            const filterValue = e.target.value;
+            activityRows.forEach(row => {
+                if (filterValue === 'all' || row.getAttribute('data-type') === filterValue) {
+                    row.style.display = 'flex';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
