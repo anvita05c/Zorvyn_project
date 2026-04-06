@@ -1,6 +1,4 @@
-# Zorvyn_project
-
-**KRYPTOHUB**
+# KRYPTOHUB
 FINANCE DASHBOARD UI
 
 This project is a frontend finance dashboard designed to present financial data in a structured and visually appealing way. It focuses on clean UI, layout design, and user experience.
