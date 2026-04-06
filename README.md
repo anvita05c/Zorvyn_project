@@ -15,7 +15,6 @@ TECHNOLOGIES USED :
 - HTML5
 - CSS3
 
-![Dashboard Preview](dashboard_preview1.p<img width="1470" height="956" alt="dashboard_preview1" src="https://github.com/user-attachments/assets/2cd95b5e-9440-44b2-903b-55e2b96c7486" />
-ng)
-![Dashboard Preview](dashboard_previe<img width="1470" height="956" alt="dashboard_preview2" src="https://github.com/user-attachments/assets/1768178a-3192-4b0d-ac9a-06c14415bb63" />
-w2.png)
+
+<img width="1470" height="927" alt="dashboard_preview1" src="https://github.com/user-attachments/assets/5ab069eb-952a-4458-858a-91fa4b296c08" />
+<img width="1469" height="926" alt="dashboard_preview2" src="https://github.com/user-attachments/assets/df0f2940-6553-4d4b-91f2-bfa1043178ca" />
