@@ -15,4 +15,5 @@ TECHNOLOGIES USED :
 - HTML5
 - CSS3
 
-
+![Dashboard Preview](dashboard_preview1.png)
+![Dashboard Preview](dashboard_preview2.png)
